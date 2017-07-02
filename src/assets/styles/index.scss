@@ -1,0 +1,22 @@
+@import 'theme';
+
+*, *:before, *:after {
+  font-family: $theme--font-family;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 12pt;
+  min-width: $container-min-width;
+  display: flex;
+  justify-content: center;
+}
+
+html, body, body > div {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}

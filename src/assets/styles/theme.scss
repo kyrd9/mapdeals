@@ -1,0 +1,60 @@
+$theme--font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+$theme--color-primary: #E04F5F;
+
+$container-min-width: 320px;
+
+@mixin title() {
+  font-weight: bold;
+  font-variant: small-caps;
+  margin-bottom: 4px;
+}
+
+@mixin input() {
+  display: block;
+  height: 32px;
+  color: $theme--color-primary;
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid $theme--color-primary;
+  text-transform: uppercase;
+  font-size: 10pt;
+  font-weight: bold;
+  &::-webkit-input-placeholder {
+    color: $theme--color-primary;
+    font-weight: normal;
+  }
+}
+
+@mixin button() {
+  display: block;
+  background: none;
+  outline: none;
+  border: 2px solid $theme--color-primary;
+  color: $theme--color-primary;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 240ms ease;
+  transition-property: color, background-color, background-image;
+  &:enabled {
+    cursor: pointer;
+  }
+  &:hover:enabled {
+    color: white;
+    background-color: $theme--color-primary;
+  }
+  &:active:enabled {
+    transform: translateY(1px);
+  }
+}
+
+@mixin button--inverted() {
+  @include button;
+  border: 2px solid white;
+  color: white;
+  &:hover:enabled {
+    color: $theme--color-primary;
+    background-color: white;
+  }
+}

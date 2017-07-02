@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "title": "Me",
+      "email": "mc@dabb.ru",
+      "token": "SomeToken",
+      "role": {
+        "id": "manager",
+        "title": "Manager"
+      }
+    }
+  ],
+  "deals": [
+    {
+      "title": "екб",
+      "coord": "56.804111, 60.627146",
+      "adress": "Екатеринбург, белинского 165",
+      "id": "5e9bc417-09fa-475a-928f-bcd0ccc9ee1a",
+      "userId": 1,
+      "status": "open"
+    },
+    {
+      "title": "Омск",
+      "coord": "54.989342, 73.368212",
+      "adress": "омск",
+      "id": "0fd4017c-8675-4286-a97b-06ff0e354a7c",
+      "userId": 1,
+      "status": "open"
+    },
+    {
+      "title": "анапа",
+      "coord": "44.894997, 37.316259",
+      "adress": "анапа",
+      "id": "6c7b5cdd-37f7-4b60-a5b8-a1019b3ce7cc",
+      "userId": 1,
+      "status": "open"
+    }
+  ]
+}
